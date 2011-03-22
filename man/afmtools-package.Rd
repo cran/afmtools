@@ -12,7 +12,7 @@ integrated moving-average process (ARFIMA).
 \tabular{ll}{
 Package: \tab afmtools\cr
 Type: \tab Package\cr
-Version: \tab 0.1.5\cr
+Version: \tab 0.1.6\cr
 Date: \tab 2011-03-22\cr
 License: \tab GPL >= 2\cr
 LazyLoad: \tab yes\cr

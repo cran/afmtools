@@ -1,4 +1,4 @@
-2eddf934eafc9b9cedb31f99c48b1f72 *DESCRIPTION
+99bcc0da784ff17aba0897fbd9624cb7 *DESCRIPTION
 697aaf86a219a497917e5dae836b17f5 *NAMESPACE
 8df2639b95c696c164aa5a1eabbe9d89 *R/arfima.whittle.R
 a19f2930089ce3b2f23be3c651bcc4ae *R/arfima.whittle.loglik.R
@@ -7,12 +7,12 @@ a19f2930089ce3b2f23be3c651bcc4ae *R/arfima.whittle.loglik.R
 e09092743b5348b9b843dbdddc610791 *R/ir.arfima.R
 9df90f8d8a3f582a3c22dc884198a19f *R/per.arfima.R
 d8caaf7ef5062a3368d2878311a1c8cc *R/pi.j.R
-d125019521f8433d74c42dbd3f96ec6a *R/plot.arfima.R
+2619ea870db62dda15c4855362f330ad *R/plot.arfima.R
 3e2ce741cb09442f8f2b4bdbfce91eb3 *R/print.arfima.R
 af6baf0fcd12122e38aac2aeee6f405d *R/psi.j.R
 e234abba4ded65512928df7a0cebcc3f *R/residuals.arfima.R
 b89cb4f992b0f819c2b366cbf80a1bbf *R/rho.arma.R
-4729f68463f3bc5b4bb2a65518a6215f *R/rho.sowell.R
+517799391254fb77129855af9108d698 *R/rho.sowell.R
 73c1ae75d32472627cf7e71ff42551e4 *R/smv.afm.R
 d04f76c6dc6bc1a5707aa6a32253c1bb *R/spectrum.arfima.R
 cc4b8567ad66120afddef6aac92ddef4 *R/spectrum.arma.R
@@ -24,7 +24,7 @@ dd20cf4f3b6bf6882f25e1ceee10e34d *data/MammothCreek.rda
 69931b06efa5f1f5c303a38065841fe6 *inst/CITATION
 c5657cc42527383c76400456336c2418 *man/MammothCreek.Rd
 61cd16e3fdff4863118c843a27042715 *man/TreeRing.Rd
-3ab749a5839970afa7bae1d8674ae0b9 *man/afmtools-package.Rd
+eae75bf6f4a6469f278a832950c47200 *man/afmtools-package.Rd
 056b8c2141a1c292bea27a4f231fbe67 *man/arfima-methods.Rd
 29bc1291658d8548986d420e3cde148a *man/arfima.whittle.Rd
 bc0fc1b9bec686046f749a4b7bc47ac7 *man/arfima.whittle.loglik.Rd

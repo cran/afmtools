@@ -9,12 +9,7 @@ B=per.arfima(x$data)
 acov.fn=ckARMA0(100, H = x$d+0.5)
 corr.fn=acov.fn/acov.fn[1]
 corr.fn.mirror=c(rev(corr.fn[-1]), corr.fn)
-
 corr.arma=rho.arma(x)
-#corr.arma.mirror=c(rev(corr.arma[-1]), corr.arma)
-
-#corr=convolve(corr.fn.mirror, corr.arma.mirror)
-#we=convolve(corr.fn.d, rev(corr.arma), type = "o")
 
 par(mfrow=c(2,2), mar=c(2,2,3,1))
 check.parameters.arfima(d=x$d, ar=x$ar, ma=x$ma, plot=TRUE)
