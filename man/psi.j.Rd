@@ -66,4 +66,5 @@ lines(h,c(rep(NA,12),psi2),lty=2)
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 \keyword{arfima}
+\keyword{stationary}
 \keyword{forecasting}

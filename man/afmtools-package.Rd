@@ -3,7 +3,7 @@
 \alias{afmtools}
 \docType{package}
 \title{
-Estimation, diagnostic and Forecasting functions for ARFIMA models}
+Estimation, Diagnostic and Forecasting functions for ARFIMA models}
 \description{
 A collection of estimation, forecasting and diagnostic tools for autoregressive fractionally
 integrated moving-average process (ARFIMA).
@@ -12,9 +12,9 @@ integrated moving-average process (ARFIMA).
 \tabular{ll}{
 Package: \tab afmtools\cr
 Type: \tab Package\cr
-Version: \tab 0.1.0\cr
-Date: \tab 2011-03-21\cr
-License: \tab GPL >=2\cr
+Version: \tab 0.1.1\cr
+Date: \tab 2011-03-22\cr
+License: \tab GPL >= 2\cr
 LazyLoad: \tab yes\cr
 }
 }
@@ -30,7 +30,9 @@ and parameter variance for ARFIMA models, respectively.
 It is suggested that the user starts by reading the documentation of (some of) these functions.
 }
 \section{Requirements}{
-  R 2.12.2. Packages \code{fracdiff}, \code{polynom}, \code{longmemo}, \code{sandwich} and \code{hypergeo}.
+  R >= 2.6.0
+  
+  Packages \code{fracdiff}, \code{polynom}, \code{longmemo}, \code{sandwich} and \code{hypergeo}.
 }
 \author{
 Javier Contreras-Reyes, Seismological Service, Department of Geophysics, Universidad de Chile. <Email:  jcontr@dgf.uchile.cl>. 
