@@ -60,7 +60,7 @@ Sowell F. (1992). Maximum likelihood estimation of stationary univariate fractio
 Palma W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
 }
 \author{
-Javier Contreras-Reyes
+Javier E. Contreras-Reyes
 }
 \seealso{
 \code{\link{acf}}, \code{\link{spectrum.arma}}
@@ -72,7 +72,7 @@ mod <- arfima.whittle(y,nar=1,nma=1)
 lag=12
 
 par(mfrow=c(1,2))
-rho.sowell(object=mod, lag.max=lag-1)
+rho.sowell(object=mod, lag.max=lag)
 acf(y,lag=lag)
 }
 \keyword{autocovariance}

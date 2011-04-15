@@ -50,7 +50,7 @@ Hassler, U., Kokoszka, P. (2010). Impulse Responses of Fractionally Integrated P
 Contreras-Reyes, J., Palma, W. (2011). Estimation, Diagnostic and Forecasting Tools for ARFIMA Models. Pre-print.
 }
 \author{
-Javier Contreras-Reyes
+Javier E. Contreras-Reyes
 }
 
 \seealso{

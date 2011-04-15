@@ -55,7 +55,7 @@ Palma W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Serie
 Ljung G. M. & Box G. E. P. (1978). On a measure of lack of fit in time series models. \emph{Biometrika} \bold{65}, 297--303.
 }
 \author{
-Georg M. Goerg, Javier Contreras-Reyes
+Georg M. Goerg, Javier E. Contreras-Reyes
 }
 \seealso{
 \code{\link{Box.test}}

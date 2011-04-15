@@ -43,7 +43,7 @@ a numeric value of the exact sample mean variance or the asymptotic sample mean 
 Palma W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
 }
 \author{
-Javier Contreras-Reyes.
+Javier E. Contreras-Reyes.
 }
 \seealso{
 \code{\link{spectrum.arma}}, \code{\link{rho.sowell}}

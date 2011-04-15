@@ -12,7 +12,7 @@ integrated moving-average process (ARFIMA).
 \tabular{ll}{
 Package: \tab afmtools\cr
 Type: \tab Package\cr
-Version: \tab 0.1.6\cr
+Version: \tab 0.1.7\cr
 Date: \tab 2011-03-22\cr
 License: \tab GPL >= 2\cr
 LazyLoad: \tab yes\cr
@@ -35,14 +35,14 @@ It is suggested that the user starts by reading the documentation of (some of) t
   Packages \code{fracdiff}, \code{polynom}, \code{longmemo}, \code{sandwich} and \code{hypergeo}.
 }
 \author{
-Javier Contreras-Reyes, Seismological Service, Department of Geophysics, Universidad de Chile.
+Javier E. Contreras-Reyes, Seismological Service, Department of Geophysics, Universidad de Chile.
 <Email: jcontr@dgf.uchile.cl>.
 
 Georg M. Goerg, Department of Statistics, Carnegie Mellon University. <Email: gmg@stat.cmu.edu>
 
 Wilfredo Palma, Departamento de Estadistica, Facultad de Matematicas, Pontificia Universidad Catolica de Chile. <Email: wilfredo@mat.puc.cl>
 
-Maintainer: Javier Contreras-Reyes <jcontr@dgf.uchile.cl>
+Maintainer: Javier E. Contreras-Reyes <jcontr@dgf.uchile.cl>
 }
 
 \section{Licence}{

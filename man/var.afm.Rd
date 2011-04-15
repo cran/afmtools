@@ -47,7 +47,7 @@ Contreras-Reyes, J., Palma, W. (2011). Estimation, Diagnostic and Forecasting To
 Palma W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
 }
 \author{
-Javier Contreras-Reyes, Wilfredo Palma
+Javier E. Contreras-Reyes, Wilfredo Palma
 }
 
 \seealso{

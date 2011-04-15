@@ -61,7 +61,7 @@ Contreras-Reyes, J., Idrovo, B. (2011). En busca de un modelo Benchmark Univaria
 predecir la tasa de desempleo de Chile. \emph{Cuadernos de Economia}, 30, 55, 105-125.
 }
 \author{
-Javier Contreras-Reyes
+Javier E. Contreras-Reyes
 }
 \seealso{
 \code{predict}

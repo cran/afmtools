@@ -1,3 +1,4 @@
+
 rho.sowell <-
 function(object=NULL, lag.max=NULL, ar=object$ar, ma=object$ma, 
 d=object$d, sd.innov=object$sd.innov, plot=TRUE) {
@@ -65,8 +66,10 @@ d=object$d, sd.innov=object$sd.innov, plot=TRUE) {
 	av=round(Re(b),4)
 	ac=round(av/av[1],4)
 	if (plot) {
-	  plot(ac,type="h",main="Sowell ACF",ylab="ACF",ylim=c(-2/sqrt(n),1))
-        abline(h=c(0,-2/sqrt(n),2/sqrt(n)),col=c(1,4,4),lty=c(1,2,2))
+	  plot(c(1:lag.max-1), ac[1:12],type="h",main="Sowell ACF",ylab="ACF",xlab="Lag", ylim=c(-2/sqrt(n),1))
+        #abline(h=c(0,-2/sqrt(n),2/sqrt(n)),col=c(1,4,4),lty=c(1,2,2))
+		abline(h=c(0),col=c(1),lty=c(1))
+
     	}
 	list(av=av, ac=ac)
 }

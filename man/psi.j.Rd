@@ -44,7 +44,7 @@ Kokoszka P. S. & Taqqu M. S. (1995). Fractional ARIMA with stable innovations. \
 Palma W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
 }
 \author{
-Javier Contreras-Reyes
+Javier E. Contreras-Reyes
 }
 \seealso{
 \code{\link{pi.j}}, \code{\link{predict}}
