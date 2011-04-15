@@ -40,9 +40,9 @@ given by the following asymptotic relationship
 a numeric value of the asymptotic AR coefficient
 }
 \references{
-Kokoszka P. S. and Taqqu M. S. (1995). Fractional ARIMA with stable innovations. \emph{Stochastic Processes and Their Applications} 60, 19-47.
+Kokoszka, P.S., Taqqu, M.S. (1995). Fractional ARIMA with stable innovations. \emph{Stochastic Processes and Their Applications} 60, 19-47.
 
-Palma W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
+Palma, W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
 }
 \author{
 Javier E. Contreras-Reyes

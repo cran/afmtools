@@ -40,7 +40,9 @@ a numeric value of the exact sample mean variance or the asymptotic sample mean 
 }
 }
 \references{
-Palma W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
+Palma, W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
+
+Contreras-Reyes, J.E., Palma, W. (2012). Statistical Analysis of Autoregressive Fractionally Integrated Moving Average Models. arXiv:1208.1728v1.
 }
 \author{
 Javier E. Contreras-Reyes.

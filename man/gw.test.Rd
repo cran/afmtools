@@ -55,10 +55,11 @@ a character string giving the name(s) of the data
 }
 }
 \references{
-Giacomini R. & White H. (2006). Tests of Conditional Predictive Ability. \emph{Econometrica} \bold{74}, 6.
+Giacomini, R., White, H. (2006). Tests of Conditional Predictive Ability. \emph{Econometrica} \bold{74}, 6.
 
-Contreras-Reyes, J., Idrovo, B. (2011). En busca de un modelo Benchmark Univariado para
-predecir la tasa de desempleo de Chile. \emph{Cuadernos de Economia}, 30, 55, 105-125.
+Contreras-Reyes, J.E., Palma, W. (2012). Statistical Analysis of Autoregressive Fractionally Integrated Moving Average Models. arXiv:1208.1728v1.
+
+Contreras-Reyes, J., Idrovo, B. (2011). En busca de un modelo Benchmark Univariado para predecir la tasa de desempleo de Chile. \emph{Cuadernos de Economia}, 30, 55, 105-125.
 }
 \author{
 Javier E. Contreras-Reyes

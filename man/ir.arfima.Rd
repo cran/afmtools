@@ -47,7 +47,7 @@ functions}
 \references{
 Hassler, U., Kokoszka, P. (2010). Impulse Responses of Fractionally Integrated Processes with Long Memory. \emph{Econometric Theory}, 26, 6, 1885-1861.
 
-Contreras-Reyes, J., Palma, W. (2011). Estimation, Diagnostic and Forecasting Tools for ARFIMA Models. Pre-print.
+Contreras-Reyes, J.E., Palma, W. (2012). Statistical Analysis of Autoregressive Fractionally Integrated Moving Average Models. arXiv:1208.1728v1.
 }
 \author{
 Javier E. Contreras-Reyes

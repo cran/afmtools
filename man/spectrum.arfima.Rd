@@ -41,7 +41,7 @@ where \eqn{\Phi(z)} and \eqn{\Theta(z)} are the lag polynomials of the ARMA part
 an \code{R} function \eqn{f(\lambda)}.
 }
 \references{
-Palma W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
+Palma, W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
 }
 \author{
 Georg M. Goerg

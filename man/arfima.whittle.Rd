@@ -74,9 +74,11 @@ theoretical spectrum implied by the parameter estimates
 }
 }
 \references{
-Whittle P (1951). \emph{Hypothesis Testing in Time Series Analysis}. Hafner, New York.
+Contreras-Reyes, J.E., Palma, W. (2012). Statistical Analysis of Autoregressive Fractionally Integrated Moving Average Models. arXiv:1208.1728v1.
 
-Palma W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
+Whittle, P. (1951). \emph{Hypothesis Testing in Time Series Analysis}. Hafner, New York.
+
+Palma, W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
 }
 \author{
 Wilfredo Palma, Georg M. Goerg

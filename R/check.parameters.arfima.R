@@ -52,7 +52,8 @@ model$Total.OK=FALSE
        }
 }
 if (plot) {
-plot(1/z.ar, ylim=range(c(-1,1, 1/abs(z.ar), 1/abs(z.ma))), xlim=range(c(-1,1, 1/abs(z.ar), 1/abs(z.ma))), lwd=2, main="Inverse AR and MA Roots")
+plot(1/z.ar, ylim=range(c(-1,1, 1/abs(z.ar), 1/abs(z.ma)))+c(-0.5,0.5), xlim=range(c(-1,1, 1/abs(z.ar), 1/abs(z.ma)))+c(-0.5,0.5), 
+lwd=2, main="Inverse AR and MA Roots")
 points(1/z.ma, pch=19, lwd=2)
 abline(h=0)
 abline(v=0)

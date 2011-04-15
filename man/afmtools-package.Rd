@@ -12,7 +12,7 @@ integrated moving-average process (ARFIMA).
 \tabular{ll}{
 Package: \tab afmtools\cr
 Type: \tab Package\cr
-Version: \tab 0.1.7\cr
+Version: \tab 0.1.8\cr
 Date: \tab 2011-03-22\cr
 License: \tab GPL >= 2\cr
 LazyLoad: \tab yes\cr
@@ -35,14 +35,14 @@ It is suggested that the user starts by reading the documentation of (some of) t
   Packages \code{fracdiff}, \code{polynom}, \code{longmemo}, \code{sandwich} and \code{hypergeo}.
 }
 \author{
-Javier E. Contreras-Reyes, Seismological Service, Department of Geophysics, Universidad de Chile.
-<Email: jcontr@dgf.uchile.cl>.
+Javier E. Contreras-Reyes, Instituto de Fomento Pesquero, Valparaiso, Chile.
+<Email: jecontrr@mat.puc.cl>.
 
 Georg M. Goerg, Department of Statistics, Carnegie Mellon University. <Email: gmg@stat.cmu.edu>
 
 Wilfredo Palma, Departamento de Estadistica, Facultad de Matematicas, Pontificia Universidad Catolica de Chile. <Email: wilfredo@mat.puc.cl>
 
-Maintainer: Javier E. Contreras-Reyes <jcontr@dgf.uchile.cl>
+Maintainer: Javier E. Contreras-Reyes <jecontrr@mat.puc.cl>
 }
 
 \section{Licence}{
@@ -51,34 +51,34 @@ package. While the software is freely usable, it would be appreciated if a refer
 }
 
 \references{
-Brockwell, P. and Davis, R. (1991). \emph{Time Series: Theory and Methods}. Springer. New York.
+Brockwell, P., Davis, R. (1991). \emph{Time Series: Theory and Methods}. Springer. New York.
 
 Contreras-Reyes, J., Idrovo, B. (2011). En busca de un modelo Benchmark Univariado para
 predecir la tasa de desempleo de Chile. \emph{Cuadernos de Economia}, 30, 55, 105-125.
 
-Contreras-Reyes, J., Palma, W. (2011). Estimation, Diagnostic and Forecasting Tools for ARFIMA Models. Pre-print.
+Contreras-Reyes, J.E., Palma, W. (2012). Statistical Analysis of Autoregressive Fractionally Integrated Moving Average Models. arXiv:1208.1728v1.
 
-Giacomini R. and White H. (2006). Tests of Conditional Predictive Ability. \emph{Econometrica} 74, 6.
+Giacomini, R., White, H. (2006). Tests of Conditional Predictive Ability. \emph{Econometrica} 74, 6.
 
-Graybill D. A. (1990). Pinus longaeva tree ring data. \emph{Mammoth Creek}, Utah, National Climatic Data Center.
+Graybill, D.A. (1990). Pinus longaeva tree ring data. \emph{Mammoth Creek}, Utah, National Climatic Data Center.
 
 Hassler, U., Kokoszka, P. (2010). Impulse Responses of Fractionally Integrated Processes with Long Memory. \emph{Econometric Theory}, 26, 6, 1885-1861.
 
-Karamata J. (1930). Sur un mode de croissance r\'eguliere des fonctions. Mathematica (Cluj) 4, 38-53.
+Karamata, J. (1930). Sur un mode de croissance r\'eguliere des fonctions. Mathematica (Cluj) 4, 38-53.
 
-Kokoszka P. S. and Taqqu M. S. (1995). Fractional ARIMA with stable innovations. \emph{Stochastic Processes and Their Applications} 60, 19-47.
+Kokoszka, P.S., Taqqu M.S. (1995). Fractional ARIMA with stable innovations. \emph{Stochastic Processes and Their Applications} 60, 19-47.
 
-Ljung G. M. and Box G. E. P. (1978). On a measure of lack of fit in time series models. \emph{Biometrika} 65, 297-303.
+Ljung, G.M., Box G.E.P. (1978). On a measure of lack of fit in time series models. \emph{Biometrika} 65, 297-303.
 
-Palma W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
+Palma, W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
 
-Palma W. & Olea R. (2010). An efficient estimator for Gaussian locally stationary processes. \emph{The Annals of Statistics} 38, 2958-2997.
+Palma, W., Olea, R. (2010). An efficient estimator for Gaussian locally stationary processes. \emph{The Annals of Statistics} 38, 2958-2997.
 
-Shumway, R. and Stoffer, D. (2006). \emph{Time Series Analysis and Its Applications: With R Examples}, Springer. \url{http://www.stat.pitt.edu/stoffer/tsa2/index.html}
+Shumway, R., Stoffer, D. (2006). \emph{Time Series Analysis and Its Applications: With R Examples}, Springer. \url{http://www.stat.pitt.edu/stoffer/tsa2/index.html}
 
-Sowell F. (1992). Maximum likelihood estimation of stationary univariate fractionally integrated time series models. \emph{Journal of Econometrics} 53, 165-188.
+Sowell, F. (1992). Maximum likelihood estimation of stationary univariate fractionally integrated time series models. \emph{Journal of Econometrics} 53, 165-188.
 
-Whittle P (1951). \emph{Hypothesis Testing in Time Series Analysis}. Hafner, New York.
+Whittle, P. (1951). \emph{Hypothesis Testing in Time Series Analysis}. Hafner, New York.
 }
 \keyword{arfima}
 \keyword{package}

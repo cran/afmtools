@@ -26,8 +26,8 @@ number of MA parameters \code{q}
 }
   \item{fixed}{
 option to fix parameters to 0. By default no parameters are fixed. Works as counting the number of parameters in the model and setting the specified ones in \code{fixed} to 0. The order of parameters is
-    1) long memory parameter \code{d}; 2) AR parameters; 3) MA parameters. For example, for an \code{ARFIMA(2,d,1)} model there are 4 parameters; to fix the second AR parameter \code{phi_2} the 3rd 
-	parameter has to be set equal to zero, i.e. \code{fixed=3}
+    1) long memory parameter \code{d}; 2) AR parameters; 3) MA parameters. For example, for an \code{ARFIMA(2,d,1)} model we have four parameters and we need to fix \code{phi_2} (the second AR parameter) 
+	to zero, this is the third parameter of the list: (\code{d}, \code{phi_1}, \code{phi_2}, \code{theta_1}). On this case, we put \code{fixed=3} to \code{fix phi_2=0}
 }
 }
 \details{
@@ -46,9 +46,11 @@ innovation variance; estimated by the ratio of theoretical spectrum and periodog
 }
 }
 \references{
-Whittle P (1951). \emph{Hypothesis Testing in Time Series Analysis}. Hafner, New York.
+Contreras-Reyes, J.E., Palma, W. (2012). Statistical Analysis of Autoregressive Fractionally Integrated Moving Average Models. arXiv:1208.1728v1.
 
-Palma W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
+Whittle, P. (1951). \emph{Hypothesis Testing in Time Series Analysis}. Hafner, New York.
+
+Palma, W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
 }
 \author{
 Georg M. Goerg

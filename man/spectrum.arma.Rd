@@ -30,9 +30,9 @@ where \eqn{\Phi(z)} and \eqn{\Theta(z)} are the lag polynomials of the ARMA mode
 an \code{R} function \eqn{f(\lambda)}.
 }
 \references{
-Brockwell P. & Davis R. (1991). \emph{Time Series: Theory and Methods}. Springer.
+Brockwell, P., Davis, R. (1991). \emph{Time Series: Theory and Methods}. Springer.
 
-Shumway R. & Stoffer D. (2006). \emph{Time Series Analysis and Its Applications: With R Examples}. Springer. \url{http://www.stat.pitt.edu/stoffer/tsa2/index.html}.
+Shumway, R., Stoffer, D. (2006). \emph{Time Series Analysis and Its Applications: With R Examples}. Springer. \url{http://www.stat.pitt.edu/stoffer/tsa2/index.html}.
 }
 \author{
 Georg M. Goerg

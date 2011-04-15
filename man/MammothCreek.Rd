@@ -15,9 +15,9 @@ Centered annual pinus longaeva tree ring time series width measurements at Mammo
 Available at the National Climatic Data Center, URL \url{http://www.ncdc.noaa.gov/paleo/metadata/noaa-tree-3376.html}
 }
 \references{
-Graybill D. A. (1990). Pinus longaeva tree ring data. \emph{Mammoth Creek}, Utah, National Climatic Data Center.
+Graybill, D.A. (1990). Pinus longaeva tree ring data. \emph{Mammoth Creek}, Utah, National Climatic Data Center.
 
-Palma W. & Olea R. (2010). An efficient estimator for Gaussian locally stationary processes. \emph{The Annals of Statistics} 38, 2958-2997.
+Palma, W., Olea R. (2010). An efficient estimator for Gaussian locally stationary processes. \emph{The Annals of Statistics} 38, 2958-2997.
 }
 \examples{
 data(MammothCreek)

@@ -25,7 +25,7 @@ corresponding value of the periodogram \eqn{I(\omega_j)}
 }
 }
 \references{
-Brockwell, P. and Davis, R. (1991). \emph{Time Series: Theory and Methods}. Springer. New York.
+Brockwell, P., Davis, R. (1991). \emph{Time Series: Theory and Methods}. Springer. New York.
 }
 \author{
 Wilfredo Palma, Georg M. Goerg

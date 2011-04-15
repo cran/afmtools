@@ -50,9 +50,11 @@ ARFIMA model object. For \code{tsdiag} , produce plots of standardized residuals
 function of the residuals, and the p-values of a Portmanteau test for all lags up to \code{gof.lag}.
 }
 \references{
-Palma W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
+Contreras-Reyes, J.E., Palma, W. (2012). Statistical Analysis of Autoregressive Fractionally Integrated Moving Average Models. arXiv:1208.1728v1.
 
-Ljung G. M. & Box G. E. P. (1978). On a measure of lack of fit in time series models. \emph{Biometrika} \bold{65}, 297--303.
+Palma, W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
+
+Ljung, G.M., Box, G.E.P. (1978). On a measure of lack of fit in time series models. \emph{Biometrika} \bold{65}, 297--303.
 }
 \author{
 Georg M. Goerg, Javier E. Contreras-Reyes
