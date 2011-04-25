@@ -64,35 +64,26 @@ Javier Contreras-Reyes
 \code{pred.arfima}, \code{predict}
 }
 \examples{
-data(MammothCreek)
-y=MammothCreek-mean(MammothCreek)
-r=30
-obs=y[1:(length(y)-r)]
-nobs=1:r
-y.real=y[(length(y)-r+1):length(y)]
+r = 100
+s = 30
+y = arima.sim(n = r, list(ar = c(0.8, -0.4), ma = c(-0.2, 0.3)),  sd = sqrt(0.18))
+y.real = y[(length(y)-s+1):length(y)]
+obs = y[1:(r-s)]
+mod.arma <- arima(obs, order = c(1,0,1))
 mod.arima <- arima(obs, order = c(1,1,1))
-mod.arfima <- arfima.whittle(obs,nar=1,nma=1)
-P=matrix(NA,r,2) # matrix of predictions
+P = matrix(NA, s, 2) # matrix of predictions
 
-for(i in 1:r) {
-	p.arma <- predict(mod.arima,ahead=1)
-	p.arfima <- pred.arfima(object=mod.arfima,ahead=1)
-	P[i,]=c(p.arma$pred, p.arfima$pred)
-	obs=c(obs,y.real[i])
+for(i in 1:s) {
+	p.arma <- predict(mod.arma, ahead = 1)
+	p.arima <- predict(mod.arima, ahead = 1)
+	P[i,] = c(p.arma$pred, p.arima$pred)
+	obs = c(obs, y.real[i])
+	mod.arma <- arima(obs, order = c(1,0,1))
 	mod.arima <- arima(obs, order = c(1,1,1))
-	mod.arfima <- arfima.whittle(obs,nar=1,nma=1)
 }
 
-plot(nobs,abs(P[,1]-y.real),type="l",col="red",main="Absolute Forecasting Errors",
-ylab=expression(abs(y-hat(y))))
-lines(nobs,abs(P[,2]-y.real),type="l",col="blue")
-legend(0,0.9,c("ARIMA(1,1,1)","ARFIMA(1,d,1)"),col=c("red","blue"),lty=c(1,1))
-
-### Giacomini-White test
-gw.test(x=P[,1],y=P[,2],p=y.real,T=length(y),tau=1,method="HAC",
-alternative="less")
-gw.test(x=P[,2],y=P[,1],p=y.real,T=length(y),tau=1,method="Andrews",
-alternative="greater")
+gw.test(x = P[,1], y = P[,2], p = y.real, T = length(y), 
+tau = 1, method = "HAC", alternative = "less")
 }
 \keyword{test}
 \keyword{forecasting}

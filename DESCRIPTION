@@ -1,6 +1,6 @@
 Package: afmtools
 Type: Package
-Version: 0.1.2
+Version: 0.1.4
 Date: 2011-04-25
 Title: Estimation, Diagnostic and Forecasting Functions for ARFIMA
         models
@@ -13,5 +13,5 @@ Description: A collection of estimation, forecasting and diagnostic
 License: GPL (>= 2)
 LazyLoad: yes
 Repository: CRAN
-Packaged: 2011-05-02 18:36:45 UTC; Javier
-Date/Publication: 2011-05-03 07:28:00
+Date/Publication: 2011-07-28 06:14:14
+Packaged: 2011-07-27 22:47:02 UTC; Javier

@@ -34,7 +34,7 @@ function(object, ahead=1, crt=50)
 				pred[h] = pred[h] + psi.j(h=i,ar=object$ar,ma=object$ma,d=object$d)*pi.j(h=j+h-i,ar=object$ar,ma=object$ma,d=object$d)*object$data[T-j]
 			}
 			for(k in 0:(h-1)) sum = sum + psi.j(h=k,ar=object$ar,ma=object$ma,d=object$d)^2
-			pred.err[h]= object$sd.innov*sum
+			pred.err[h]= sum*object$sd.innov^2
 		}	
 	}
 

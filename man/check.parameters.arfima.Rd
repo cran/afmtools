@@ -71,6 +71,4 @@ check.parameters.arfima(d=-0.7,ar=0.4,ma=0,plot=TRUE)
 # Fractional parameter outside the (-1,0.5) interval 
 check.parameters.arfima(d=0.5,ar=0.4,ma=0,plot=TRUE) 
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
 \keyword{stationary}

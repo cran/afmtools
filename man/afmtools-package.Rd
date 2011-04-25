@@ -12,7 +12,7 @@ integrated moving-average process (ARFIMA).
 \tabular{ll}{
 Package: \tab afmtools\cr
 Type: \tab Package\cr
-Version: \tab 0.1.1\cr
+Version: \tab 0.1.4\cr
 Date: \tab 2011-03-22\cr
 License: \tab GPL >= 2\cr
 LazyLoad: \tab yes\cr
@@ -54,7 +54,7 @@ Bondon P. and Palma W. (2007). A class of antipersitent processes. \emph{Journal
 
 Brockwell, P. and Davis, R. (1991). \emph{Time Series: Theory and Methods}. Springer. New York.
 
-Contreras-Reyes J. and Palma W. (2011). Forecasting tools package for ARFIMA models. Preprint.
+Contreras J. & Palma W. (2011). Estimation, Diagnostic and Forecasting Tools for ARFIMA Models\code{:} The afmtools package. Preprint.
 
 Giacomini R. and White H. (2006). Tests of Conditional Predictive Ability. \emph{Econometrica} 74, 6.
 
@@ -65,6 +65,8 @@ Kokoszka P. S. and Taqqu M. S. (1995). Fractional ARIMA with stable innovations.
 Ljung G. M. and Box G. E. P. (1978). On a measure of lack of fit in time series models. \emph{Biometrika} 65, 297-303.
 
 Palma W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
+
+Palma W. & Olea R. (2010). An efficient estimator for Gaussian locally stationary processes. \emph{The Annals of Statistics} 38, 2958-2997.
 
 Shumway, R. and Stoffer, D. (2006). \emph{Time Series Analysis and Its Applications: With R Examples}, Springer. \url{http://www.stat.pitt.edu/stoffer/tsa2/index.html}
 

@@ -67,7 +67,5 @@ h=1:70
 plot(h,c(psi1,rep(NA,70-24)),type="l",ylim=c(0,max(psi1)),ylab=" ")
 lines(h,c(rep(NA,24),psi2),lty=3)
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
 \keyword{stationary}
 \keyword{forecasting}

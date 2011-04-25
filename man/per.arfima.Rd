@@ -37,25 +37,23 @@ Wilfredo Palma, Georg M. Goerg
 data(MammothCreek)
 y=MammothCreek-mean(MammothCreek)
 x=per.arfima(y)
-cbind(x$spec,x$freq)
-plot(x$freq,x$spec,type="l",xlab="frequencies",ylab="spectrum", 
-main="Periodogram")
+plot(x$freq, x$spec, type="l", xlab="frequencies", ylab="spectrum", main="Periodogram")
+# cbind(x$spec,x$freq)
 
 #### For a ARMA model:
-sim <- arima.sim(n=1000, list(ar = c(0.556), ma = c(-0.634)), sd = 1.5)
+sim <- arima.sim(n=1000, list(ar = c(0.56), ma = c(-0.63)), sd = sqrt(1.5))
 x=per.arfima(sim)
-plot(x$freq,x$spec,type="l",xlab="frequencies",ylab="spectrum", 
-main="Periodogram")
+plot(x$freq, x$spec, type="l", xlab="frequencies", ylab="spectrum", main="Periodogram")
 
 #### For USAccDeaths database
+
+par(mfrow=c(1,2))
 data(USAccDeaths)
 x=per.arfima(USAccDeaths)
-plot(x$freq,x$spec,type="l",xlab="frequencies",ylab="spectrum", 
-main="Periodogram")
+plot(x$freq,x$spec, type="l", xlab="frequencies", ylab="spectrum", main="Periodogram")
 
 USAstand=(USAccDeaths-mean(USAccDeaths))/sqrt(var(USAccDeaths))
 z=per.arfima(USAstand)
-plot(z$freq,z$spec,type="l",xlab="frequencies",ylab="spectrum", 
-main="Periodogram")
+plot(z$freq, z$spec, type="l", xlab="frequencies", ylab="spectrum", main="Periodogram")
 }
 \keyword{loglikelihood}

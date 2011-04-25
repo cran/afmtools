@@ -66,41 +66,13 @@ Javier Contreras-Reyes
 \code{\link{acf}}, \code{\link{spectrum.arma}}
 }
 \examples{
-data(MammothCreek)
-y=MammothCreek-mean(MammothCreek)
+data(TreeRing)
+y=TreeRing-mean(TreeRing)
 mod <- arfima.whittle(y,nar=1,nma=1)
 lag=12
+
+par(mfrow=c(1,2))
 rho.sowell(object=mod, lag.max=lag-1)
 acf(y,lag=lag)
-
-# Particular case (Palma, 2007; page 69)
-
-av.arfima1d1 <- function(h,d,phi,theta) {
-	C <- function(d,h,phi) { # function defined in (3.23), page 48. 
-	gamma0=gamma(1-2*d)*gamma(h+d)/(gamma(1-d)*gamma(d)*gamma(1+h-d))
-	res=gamma0*(phi^(2)*hypergeo(d+h,1,1-d+h,phi)+ hypergeo(d-h,1,1-d-h,phi)-1)
-	return(res)
-	}
-	av=rep(NA,h+1)
-	for(i in 0:h){
-		if(i<=50){
-			a=theta*C(d,-i,-phi)+(1+theta^2)*C(d,1-i,-phi)+theta*C(d,2-i,-phi)
-			b=phi*(phi^2-1)
-			av[i+1]=Re(a/b)
-		}
-		else {
-			a=(abs(i)^(2*d-1))*((1+theta)^2)*gamma(1-2*d)*sin(pi*d)
-			b=pi*(1+phi)^2
-			av[i+1]=a/b
-		}
-	}
-	return(round(av,4))
-}
-
-av.arfima1d1(h=998, d=0.4, phi=0.5, theta=0.2)
-rho.sowell(lag.max=998, ar=0.5, ma=0.2, d=0.4, sd.innov=1)$av
-
-av.arfima1d1(h=998, d=0.499, phi=-0.9, theta=-0.3)
-rho.sowell(lag.max=998, ar=-0.9, ma=-0.3, d=0.499, sd.innov=1)$av
 }
 \keyword{autocovariance}

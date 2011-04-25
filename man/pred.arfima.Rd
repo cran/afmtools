@@ -39,7 +39,9 @@ The \eqn{\gamma_t(h)} terms are computed by \code{\link{rho.sowell}} function. I
 \deqn{\widehat{y}_{t}(h)=\sum_{j=0}^{t} \sum_{i=0}^{h-1}\psi_i\pi_{j+h-i}y_{t-j}}
 
 with \eqn{\psi_i} and \eqn{\pi_j} are computed by \code{\link{psi.j}} and 
-\code{\link{pi.j}} functions.
+\code{\link{pi.j}} functions. In addition, the prediction error variance is
+
+\deqn{E[\widehat{y}_{t}(h)-y_t(h)]^2=\sigma^2\sum_{j=0}^{h-1} \phi^2_j}
 }
 \value{
 	\item{pred}{
@@ -63,18 +65,18 @@ Javier Contreras-Reyes, Wilfredo Palma
 \code{\link{predict}}, \code{\link{rho.sowell}}, \code{\link{psi.j}}, \code{\link{pi.j}}
 }
 \examples{
-data(MammothCreek)
-y=MammothCreek-mean(MammothCreek)
-mod1 <- arfima.whittle(y,nar=0,nma=0)
+data(TreeRing)
+y=TreeRing-mean(TreeRing)
+mod1 <- arfima.whittle(y,nar=1,nma=1)
 pred.arfima(object=mod1,ahead=1)
 
 x=y[(length(y)-300):length(y)]
 mod2 <- arfima.whittle(x,nar=1,nma=1)
 pred.arfima(object=mod2,ahead=3) # increase the prediction error
 
-m=15
+m=5
 A <- rep(NA,m)
-z=y[(length(y)-100):length(y)]
+z=y[(length(y)-90):length(y)]
 t=length(z)
 
 for(i in 1:m) {
@@ -85,37 +87,6 @@ for(i in 1:m) {
 
 plot(c(z[1:t],rep(NA,m)),type="l")
 lines(c(rep(NA,t),z[(t+1):length(z)]),type="l",col="red")
-
-####### Prediction Error bands #######
-
-y=MammothCreek-mean(MammothCreek)
-r=30 # number of predictions
-conf.level = 95
-obs=y[1:(length(y)-r)]
-nobs=1:r
-y.real=y[(length(y)-r+1):length(y)]
-mod.arfima <- arfima.whittle(obs,nar=1,nma=1)
-P=rep(NA,r) # predictions
-R=matrix(NA,r,2) # forecasting bands
-
-for(i in 1:r) {
-	p.arfima <- pred.arfima(object=mod.arfima,ahead=1)
-	P[i]=p.arfima$pred
-	se = qnorm(1-(1-conf.level/100)/2)*sqrt(p.arfima$pred.err)
-	R[i,] = p.arfima$pred + c(se, -se)
-	obs=c(obs,y.real[i])
-	mod.arfima <- arfima.whittle(obs,nar=1,nma=1)
-}
-
-plot(nobs,y.real,type="l",main="Tree Ring predictions", 
-ylab="width measurements", ylim=c(-1.4,1.2))
-lines(nobs,P,type="l",col="blue")
-lines(nobs,R[,1],type="l",col="red",lty=2)
-lines(nobs,R[,2],type="l",col="red",lty=2)
-legend(1,-0.5,c("observed", "predicted","f.b"),
-col=c("black","blue","red"),lty=c(1,1,2))
-
-####### For other examples, see 'gw.test' function
 }
 \keyword{forecasting}
 

@@ -2,7 +2,7 @@
 \alias{MammothCreek}
 \docType{data}
 \title{
-Tree Ring Time Series Data
+Mammoth Creek Time Series Data
 }
 \description{
 Centered annual pinus longaeva tree ring time series width measurements at Mammoth Creek, Utah, from 0 A.D to 1989 A.D.
@@ -17,7 +17,7 @@ Available at the National Climatic Data Center, URL \url{http://www.ncdc.noaa.go
 \references{
 Graybill D. A. (1990). Pinus longaeva tree ring data. \emph{Mammoth Creek}, Utah, National Climatic Data Center.
 
-Palma W. & Olea R. (2010). An efficient estimator for Gaussian locally stationary processes. \emph{The Annals of Statistics} \bold{38}, 2958--2997.
+Palma W. & Olea R. (2010). An efficient estimator for Gaussian locally stationary processes. \emph{The Annals of Statistics} 38, 2958-2997.
 }
 \examples{
 data(MammothCreek)

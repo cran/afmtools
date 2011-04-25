@@ -42,8 +42,8 @@ Georg M. Goerg
 }
 \examples{
 #### For a ARFIMA model:
-data(MammothCreek)
-y=MammothCreek-mean(MammothCreek)
+data(TreeRing)
+y=TreeRing-mean(TreeRing)
 mod <- arfima.whittle(y,nar=1,nma=1)
 lag=12
 r.arma=rho.arma(object=mod, lag.max=lag)
@@ -65,7 +65,5 @@ plot(r.arma,type="h",main="ACF",ylab=" ",ylim=c(-2/sqrt(n),1))
 abline(h=c(0,-2/sqrt(n),2/sqrt(n)),col=c(1,2,2),lty=c(1,2,2))
 acf(sim,lag=6)
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
 \keyword{arma}
 \keyword{autocovariance}
