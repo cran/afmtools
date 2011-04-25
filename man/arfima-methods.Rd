@@ -52,7 +52,7 @@ function of the residuals, and the p-values of a Portmanteau test for all lags u
 \references{
 Palma W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
 
-Ljung G. M. \& Box G. E. P. (1978). On a measure of lack of fit in time series models. \emph{Biometrika} \bold{65}, 297--303.
+Ljung G. M. & Box G. E. P. (1978). On a measure of lack of fit in time series models. \emph{Biometrika} \bold{65}, 297--303.
 }
 \author{
 Georg M. Goerg, Javier Contreras-Reyes

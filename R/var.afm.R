@@ -8,7 +8,7 @@ function(phi=0,theta=0,n)
 	p<-length(phi)
 	q<-length(theta)
 	np=1+p+q	
-	par1=c(1,-phi)
+	par1=c(1,phi)
 	par2=c(1,theta)
 
 	grad.int <- function(lambda,x,pos) {

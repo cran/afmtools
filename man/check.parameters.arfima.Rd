@@ -57,15 +57,20 @@ y=MammothCreek-mean(MammothCreek)
 mod <- arfima.whittle(y,nar=1,nma=1)
 check.parameters.arfima(d=mod$d,ar=mod$ar,ma=mod$ma,plot=TRUE)
 
-## For some particular cases
-check.parameters.arfima(d=0.2,ar=-0.4,ma=0.7,plot=TRUE) # Invertible process
-check.parameters.arfima(d=0.2,ar=-0.4,ma=c(0.7,-0.9),plot=TRUE) # No invertible process
-check.parameters.arfima(d=-0.5,ar=0.4,ma=-0.7,plot=TRUE) # Causal process
-check.parameters.arfima(d=-0.5,ar=-1.4,ma=-0.7,plot=TRUE) # No causal process
-check.parameters.arfima(d=-0.7,ar=0.4,ma=0,plot=TRUE) # Fractional parameter in the(-1,0.5) interval
-check.parameters.arfima(d=0.5,ar=0.4,ma=0,plot=TRUE) # Fractional parameter outside the (-1,0.5) interval
+###### For some particular cases ######
+# Invertible process
+check.parameters.arfima(d=0.2,ar=-0.4,ma=0.7,plot=TRUE)
+# No invertible process 
+check.parameters.arfima(d=0.2,ar=-0.4,ma=c(0.7,-0.9),plot=TRUE)
+# Causal process 
+check.parameters.arfima(d=-0.5,ar=0.4,ma=-0.7,plot=TRUE) 
+# No causal process
+check.parameters.arfima(d=-0.5,ar=-1.4,ma=-0.7,plot=TRUE) 
+# Fractional parameter in the(-1,0.5) interval
+check.parameters.arfima(d=-0.7,ar=0.4,ma=0,plot=TRUE)
+# Fractional parameter outside the (-1,0.5) interval 
+check.parameters.arfima(d=0.5,ar=0.4,ma=0,plot=TRUE) 
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{arfima}
-\keyword{stationary}% __ONLY ONE__ keyword per line
+\keyword{stationary}

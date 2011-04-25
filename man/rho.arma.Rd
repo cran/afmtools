@@ -26,13 +26,13 @@ a numeric vector containing the mobile average polynomial parameters. By default
 }
 }
 \details{
-This function is used for \code{plot} function to plotting the ARFIMA class objects
+This function is used for \code{plot} function to plotting the ARFIMA class objects.
 }
 \value{
 a numerical value of size \code{lag.max} with the autocorrelations function values. In addition, a graphical output is produced if \code{plot==TRUE} with the autocorrelation function
 }
 \references{
-Brockwell P. \& Davis R. (1991). \emph{Time Series: Theory and Methods}. Springer.
+Brockwell P. & Davis R. (1991). \emph{Time Series: Theory and Methods}. Springer.
 }
 \author{
 Georg M. Goerg

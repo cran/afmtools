@@ -12,7 +12,7 @@ Centered annual pinus longaeva tree ring time series width measurements at Mammo
 \code{MammothCreek} is a data frame with 1990 observations.
 }
 \source{
-Available at the National Climatic Data Center (\url{http://www.ncdc.noaa.gov/paleo/metadata/noaa-tree-3376.html}).
+Available at the National Climatic Data Center, URL \url{http://www.ncdc.noaa.gov/paleo/metadata/noaa-tree-3376.html}
 }
 \references{
 Graybill D. A. (1990). Pinus longaeva tree ring data. \emph{Mammoth Creek}, Utah, National Climatic Data Center.

@@ -22,14 +22,17 @@ indicator for exact/asymptotic (respectively) sample mean variance.
 }
 }
 \details{
-The exact mean variance of \code{y} is given by 
-\code{Var(mean(y))=(1/n)*[2*sum_{j=1}^{n-1}(1-j/n)*gamma(j)+gamma(0)]}
-where the Sowell exact autocovariance function \code{gamma(.)} is used. In addition, for large \code{n}, we have the asymptotic mean variance
+The exact mean variance of \eqn{\overline{y}} is given by
+ 
+\deqn{\mbox{Var}(\overline{y})=\frac{1}{n}\left[2\sum_{j=1}^{n-1}(1-\frac{j}{n})\gamma(j)+\gamma(0)\right]}
 
-\code{Var(mean(y)) ~ c_{gamma}*n^{2d-1}/(d*(2d+1))} 
+where the Sowell exact autocovariance function \eqn{\gamma(.)} is used. In addition, for 
+large \eqn{n}, we have the asymptotic mean variance
 
-with \code{c_{gamma}=sigma^{2}_{varepsilon}*Gamma(1-2d)*sin(pi d)*|Theta(1)|^2/pi*|Phi(1)|^2}
-and \code{(sigma^{2}_{varepsilon}/pi)*|Theta(1)|^2/|Phi(1)|^2} is obtained by \code{\link{spectrum.arma}} function multiplied by 2.
+\deqn{\mbox{Var}(\overline{y})\sim \frac{c_{\gamma}}{d(2d+1)}n^{2d-1}} 
+
+where \eqn{c_{\gamma}=\frac{\sigma^{2}_{\varepsilon}}{\pi}\frac{|\Theta(1)|^2}{|\Phi(1)|^2}\Gamma(1-2d)\sin(\pi d)}
+and \eqn{(\sigma^{2}_{\varepsilon}/\pi)|\Theta(1)|^2/|\Phi(1)|^2} is obtained by \code{\link{spectrum.arma}} function multiplied by 2.
 }
 \value{
   \item{v}{
@@ -52,7 +55,4 @@ mod <- arfima.whittle(y,nar=1,nma=1)
 smv.afm(object=mod,comp=TRUE)
 smv.afm(object=mod,comp=FALSE)
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{arfima}
-\keyword{variance}% __ONLY ONE__ keyword per line
+\keyword{variance}

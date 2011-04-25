@@ -4,8 +4,8 @@
 Parameter Variance-Covariance matrix for ARFIMA models
 }
 \description{
-Method to estimate the Parameter Variance-Covariance matrix associated to \code{ARFIMA(p,d,q)} process.
-Correspond to a generalization of the illustrated method for \code{ARFIMA(1,d,1)} model by Palma (2007). 
+Method to estimate the Parameter Variance-Covariance matrix associated to ARFIMA\eqn{(p,d,q)} process.
+Correspond to a generalization of the illustrated method for ARFIMA\eqn{(1,d,1)} model by Palma (2007). 
 This method, is based in the explicit formula obtained by the derivatives of the parameters log-likelihood gradients.
 }
 \usage{
@@ -24,11 +24,14 @@ sample total size.
 }
 }
 \details{
-We considering the distribution convergence \code{sqrt{n}*(widehat{alpha} - alpha) => N[0,Gamma^{-1}(alpha)]} so that \code{s.d(widehat{alpha}_i)=sqrt{(1/n)*(Gamma^{-1})_{ii}}} with
+We considering the distribution convergence 
+\eqn{\sqrt{n}(\widehat{\alpha} - \alpha)\rightarrow N[0,\Gamma^{-1}(\alpha)]} so that 
+\eqn{s.d(\widehat{\alpha}_i)=\sqrt{\frac{1}{n}\Gamma_{ii}^{-1}}} with
 
-\code{Gamma=(1/4*pi)int_{-pi}^{pi}[nabla log f(lambda)]t([nabla log f(lambda)])dlambda}
+\deqn{\Gamma=\frac{1}{4\pi}\int_{-\pi}^{\pi}[\nabla \log f(\lambda)][\nabla \log f(\lambda)]'d\lambda}
 
-where the gradients are obtained by the exact derivatives (see references). Finally, the integrals are obtained by \code{integrate} function.
+where the gradients are obtained by the exact derivatives (See Contreras-Reyes J. & Palma W., 2011). 
+Finally, the integrals are obtained by \code{\link{integrate}} function.
 }
 \value{
   \item{G}{
@@ -39,7 +42,7 @@ a vector with standard deviations associated to \code{d}, \code{phi_i} and \code
 }
 }
 \references{
-Contreras-Reyes J. \& Palma W. (2011). Forecasting tools package for ARFIMA models. Preprint.
+Contreras-Reyes J. & Palma W. (2011). Forecasting tools package for ARFIMA models. Preprint.
 
 Palma W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
 }
@@ -57,8 +60,33 @@ S=arfima.whittle(y,nar=1,nma=1)
 V=var.afm(phi=S$ar,theta=S$ma,n=length(y))
 V$SD
 summary(S)
+
+# ARFIMA(1,d,1) particular case: (Palma, 2007; page 106 & 108).
+
+phi1=-0.5
+theta1=0.2
+n1 = 100
+
+var.arfima1d1 <- 
+function(phi,theta,n)
+{
+V <- matrix(NA,3,3)
+
+V[1,1]=pi^2/6
+V[2,2]=1/(1-phi^2)
+V[3,3]=1/(1-theta^2)
+V[1,2]=V[2,1]=-log(1+phi)/phi
+V[1,3]=V[3,1]=log(1+theta)/theta
+V[2,3]=V[3,2]=-1/(1-phi*theta)
+V1=(solve(V))/n
+
+return(V1)
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
+
+var.arfima1d1(phi = -phi1, theta = theta1, n = n1)
+# note the conversion by definition: phi = -phi1
+
+var.afm(phi = phi1, theta = theta1, n = n1)$G
+}
 \keyword{variance}
-\keyword{arfima}
+\keyword{estimation}

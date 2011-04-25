@@ -5,7 +5,7 @@
 Asymptotic Infinite AR expansion
 }
 \description{
-Computes the asymptotic AR coefficients related to a ARFIMA process
+Computes the asymptotic AR coefficients related to a ARFIMA process.
 }
 \usage{
 pi.j(h, ar = 0, ma = 0, d = 0)
@@ -25,11 +25,14 @@ a numeric value of fractional parameter
 }
 }
 \details{
-Under the assumption that the roots of the polynomials \code{Phi(B)} and \code{Theta(B)} are outside the closed unit disk and \code{d in (-1,0.5)}, the
-\code{y_t ~ ARFIMA(p,d,q)} process is stationary, causal, and invertible. In this case we can write \code{varepsilon_t = Pi(B)*y_t}. Then,
-the \code{AR(OO)} coefficients, \code{pi_j}, associated to \code{Pi(B)} polynomial are given by the following asymptotic relationship
+Under the assumption that the roots of the polynomials \eqn{\Phi(B)} and \eqn{\Theta(B)} 
+are outside the closed unit disk and \eqn{d \in (-1,0.5)}, the
+\eqn{y_t \sim \mbox{ARFIMA}(p,d,q)} process is stationary, causal, and invertible. In this case 
+we can write \eqn{\varepsilon_t = \Pi(B)y_t}. Then,
+the AR(\eqn{\infty}) coefficients, \eqn{\pi_j}, associated to \eqn{\Pi(B)} polynomial are 
+given by the following asymptotic relationship
 
-\code{pi_j ~ [Phi(1)/Theta(1)]* j^{-d-1}/Gamma(d)}
+\deqn{\pi_j\sim \frac{\Phi(1)}{\Theta(1)}\frac{j^{-d-1}}{\Gamma(-d)}}
 
 
 }
@@ -66,6 +69,5 @@ lines(h,c(rep(NA,24),psi2),lty=3)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{arfima}
 \keyword{stationary}
 \keyword{forecasting}

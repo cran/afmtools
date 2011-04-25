@@ -33,9 +33,9 @@ option to fix parameters to 0. By default no parameters are fixed. Works as coun
 \details{
 The approximate maximum-likelihood estimates consist in
 
-\code{L(theta) = -(1/2*n)[log(|Gamma_{theta})-t(Y)*Gamma^{-1}_{theta}*Y]}
+\deqn{L(\theta)=-\frac{1}{2n}[\log(|\Gamma_\theta|)-Y'\Gamma^{-1}_\theta Y]}
 
-with \code{(Gamma_{theta})_{ij} = gamma_{theta}(i-j) = int_{-pi}^{pi} f_{theta}(lambda)e^{(i-j)*lambda*k} dlambda}
+with \deqn{(\Gamma_\theta)_{ij}=\gamma_\theta(i-j)=\int_{-\pi}^{\pi}f_\theta(\lambda)e^{(i-j)\lambda k}d\lambda}
 }
 \value{
 	\item{L}{
@@ -64,5 +64,4 @@ loglik$sigma
 
 ####### For other examples, see 'arfima.whittle' function
 }
-\keyword{arfima}
-\keyword{loglikelihood}% __ONLY ONE__ keyword per line
+\keyword{loglikelihood}

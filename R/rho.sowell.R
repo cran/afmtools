@@ -11,23 +11,23 @@ d=object$d, sd.innov=object$sd.innov, plot=TRUE)
 	p=length(ar)
 	q=length(ma)	
 	theta=c(1,ma)
-	rho=1/polyroot(c(1,-ar))
+	rho=1/Re(polyroot(c(1,-ar)))
 	
 	C = function(h,r){
 		gamma0=gamma(1-2*d)*gamma(h+d)/(gamma(1-d)*gamma(d)*gamma(1+h-d))
 		gamma0*(r^(2*p)*hypergeo(d+h,1,1-d+h,r)+ hypergeo(d-h,1,1-d-h,r)-1) 
 	}
 
-	chi = function(j) {
+	chi = function(j){
 		aux1=1	
-		for(i in 1:p) aux1=aux1*(1-rho[i]*rho[j])
+		for(i in 1:p) aux1=aux1*(rho[i]*rho[j]-1)
 		if(p>1){
 			ar.aux=rho[-j]
 			aux2=1
 			for(i in 1:(p-1)) aux2=aux2*(rho[j]-ar.aux[i]) 		
 		}
 		if(p==1) aux2=1
-		(rho[j]*aux1*aux2)^1 
+		1/(rho[j]*aux1*aux2)
 	}
 	
 	psi.ma = function(l) {
@@ -38,12 +38,11 @@ d=object$d, sd.innov=object$sd.innov, plot=TRUE)
 		sum 
 	}
 
-	b=rep(NA,(lag.max+1))
+	b=rep(0,(lag.max+1))
 	
-	for (h in 1:length(b)) {
+	for (h in 1:(lag.max+1)) {
 		if(h<=50){
 		q.aux=seq(-q,q,1)
-		b[h]=0
 		for (i in 1:length(q.aux)){
 			for (j in 1:p){ 
 				if(length(ar)==1 & ar[1]==0){
@@ -52,7 +51,7 @@ d=object$d, sd.innov=object$sd.innov, plot=TRUE)
 				}
 				if(ar[1]!=0){ 
 					chi.aux=chi(j)
-					C.aux=C(p+q.aux[i]-(h-1),rho[j])
+					C.aux=C(p+q.aux[i]-(h-1),-rho[j])
 				} 
 				if(length(ma)==1 & ma[1]==0) psi.aux=1
 				if(ma[1]!=0) psi.aux=psi.ma(q.aux[i])
@@ -61,7 +60,7 @@ d=object$d, sd.innov=object$sd.innov, plot=TRUE)
 		}
 		}
 		if(h>50){
-			cg=spectrum.arma(ar=ar,ma=ma,sd.innov=sd.innov)
+			cg=spectrum.arma(ar=-ar,ma=ma,sd.innov=sd.innov)
 			cgamma=function(lambda) 2*cg(lambda)*gamma(1-2*d)*sin(pi*d)
 			b[h]=cgamma(0)*abs(h)^(2*d-1)
 		}
@@ -69,10 +68,9 @@ d=object$d, sd.innov=object$sd.innov, plot=TRUE)
 
 	av=round(Re(b),4)
 	ac=round(av/av[1],4)
-	if (plot) {
+	if (plot & !is.null(object)) {
 	  plot(ac,type="h",main="Theorical ACF",ylab="ACF",ylim=c(-2/sqrt(n),1))
         abline(h=c(0,-2/sqrt(n),2/sqrt(n)),col=c(1,2,2),lty=c(1,2,2))
     	}
 	list(av=av, ac=ac)
 }
-

@@ -5,7 +5,7 @@
 Asymptotic Infinite MA expansion
 }
 \description{
-Computes the asymptotic MA coefficients related to a ARFIMA process
+Computes the asymptotic MA coefficients related to a ARFIMA process.
 }
 \usage{
 psi.j(h, ar = 0, ma = 0, d = 0)
@@ -26,17 +26,20 @@ a numeric value of fractional parameter
 }
 }
 \details{
-Under the assumption that the roots of the polynomials \code{Phi(B)} and \code{Theta(B)} are outside the closed unit disk and \code{d in (-1,0.5)}, the
-\code{y_t ~ ARFIMA(p,d,q)} process is stationary, causal, and invertible. In this case we can write \code{y_t = Psi(B)*varepsilon_t}. Then,
-the \code{MA(OO)} coefficients, \code{psi_j}, associated to \code{Psi(B)} polynomial are given by the following asymptotic relationship
+Under the assumption that the roots of the polynomials \eqn{\Phi(B)} and \eqn{\Theta(B)} 
+are outside the closed unit disk and \eqn{d \in (-1,0.5)}, the
+\eqn{y_t \sim \mbox{ARFIMA}(p,d,q)} process is stationary, causal, and invertible. In this case 
+we can write \eqn{y_t = \Psi(B)\varepsilon_t}. Then,
+the MA(\eqn{\infty}) coefficients, \eqn{\psi_j}, associated to \eqn{\Psi(B)} polynomial are 
+given by the following asymptotic relationship
 
-\code{psi_j ~ [Theta(1)/Phi(1)]* j^{d-1}/Gamma(d)}
+\deqn{\psi_j\sim \frac{\Theta(1)}{\Phi(1)}\frac{j^{d-1}}{\Gamma(d)}}
 }
 \value{
 a numeric value of the asymptotic MA coefficient.
 }
 \references{
-Kokoszka P. S. and Taqqu M. S. (1995). Fractional ARIMA with stable innovations. \emph{Stochastic Processes and Their Applications} 60, 19-47.
+Kokoszka P. S. & Taqqu M. S. (1995). Fractional ARIMA with stable innovations. \emph{Stochastic Processes and Their Applications} 60, 19-47.
 
 Palma W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
 }
@@ -63,8 +66,5 @@ h=1:50
 plot(h,c(psi1,rep(NA,50-12)),type="l",ylab=" ")
 lines(h,c(rep(NA,12),psi2),lty=2)
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{arfima}
 \keyword{stationary}
 \keyword{forecasting}

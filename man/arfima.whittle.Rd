@@ -91,7 +91,8 @@ x11()
 acf(x) ## sample ACF displays long range dependence
 
 mod=arfima.whittle(x) # estimate just the long memory parameter
-summary(mod) # highly significant; but AR and/or MA parameters have to be considered too
+summary(mod) # highly significant; but AR and/or MA parameters 
+             # have to be considered too
 
 mod11=arfima.whittle(x, nar=1, nma=1) # AR parameter non-significant
 summary(mod11)
@@ -104,7 +105,4 @@ res=residuals(mod11)
 acf(res)
 Box.test(res, 10, type="Ljung")
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{arfima}
-\keyword{estimation}% __ONLY ONE__ keyword per line
+\keyword{estimation}

@@ -18,10 +18,10 @@ univariate signal / time series z
 }
 \value{
 	\item{freq}{
-Fourier frequencies \code{omega_j = 2*pi*j/n}, where \code{n} is the length of \code{z}, and \code{j=1,...,[n/2]}
+Fourier frequencies \eqn{\omega_j=2\pi j/n}, where \eqn{n} is the length of \eqn{z}, and \eqn{j=1,...,[n/2]}
 }
 	\item{spec}{
-corresponding value of the periodogram \code{I(omega_j)}
+corresponding value of the periodogram \eqn{I(\omega_j)}
 }
 }
 \references{
@@ -38,21 +38,24 @@ data(MammothCreek)
 y=MammothCreek-mean(MammothCreek)
 x=per.arfima(y)
 cbind(x$spec,x$freq)
-plot(x$freq,x$spec,type="l",xlab="frequencies",ylab="spectrum", main="Periodogram")
+plot(x$freq,x$spec,type="l",xlab="frequencies",ylab="spectrum", 
+main="Periodogram")
 
 #### For a ARMA model:
 sim <- arima.sim(n=1000, list(ar = c(0.556), ma = c(-0.634)), sd = 1.5)
 x=per.arfima(sim)
-plot(x$freq,x$spec,type="l",xlab="frequencies",ylab="spectrum", main="Periodogram")
+plot(x$freq,x$spec,type="l",xlab="frequencies",ylab="spectrum", 
+main="Periodogram")
 
 #### For USAccDeaths database
 data(USAccDeaths)
 x=per.arfima(USAccDeaths)
-plot(x$freq,x$spec,type="l",xlab="frequencies",ylab="spectrum", main="Periodogram")
+plot(x$freq,x$spec,type="l",xlab="frequencies",ylab="spectrum", 
+main="Periodogram")
 
 USAstand=(USAccDeaths-mean(USAccDeaths))/sqrt(var(USAccDeaths))
 z=per.arfima(USAstand)
-plot(z$freq,z$spec,type="l",xlab="frequencies",ylab="spectrum", main="Periodogram")
+plot(z$freq,z$spec,type="l",xlab="frequencies",ylab="spectrum", 
+main="Periodogram")
 }
-\keyword{arfima}
-\keyword{likelihood}% __ONLY ONE__ keyword per line
+\keyword{loglikelihood}

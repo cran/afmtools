@@ -9,7 +9,9 @@ Forecasting evaluation method proposed by Giacomini and White (GW) to compare tw
 predictions provided by two time series models.
 }
 \usage{
-gw.test(x, y, p, T, tau, method=c("HAC","NeweyWest","Andrews","LumleyHeagerty"), alternative=c("two.sided","less","greater"))
+gw.test(x, y, p, T, tau, 
+        method=c("HAC","NeweyWest","Andrews","LumleyHeagerty"), 
+        alternative=c("two.sided","less","greater"))
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -53,7 +55,7 @@ a character string giving the name(s) of the data
 }
 }
 \references{
-Giacomini R. \& White H. (2006). Tests of Conditional Predictive Ability. \emph{Econometrica} \bold{74}, 6.
+Giacomini R. & White H. (2006). Tests of Conditional Predictive Ability. \emph{Econometrica} \bold{74}, 6.
 }
 \author{
 Javier Contreras-Reyes
@@ -87,8 +89,10 @@ lines(nobs,abs(P[,2]-y.real),type="l",col="blue")
 legend(0,0.9,c("ARIMA(1,1,1)","ARFIMA(1,d,1)"),col=c("red","blue"),lty=c(1,1))
 
 ### Giacomini-White test
-gw.test(x=P[,1],y=P[,2],p=y.real,T=length(y),tau=1,method="HAC",alternative="less")
-gw.test(x=P[,2],y=P[,1],p=y.real,T=length(y),tau=1,method="Andrews",alternative="greater")
+gw.test(x=P[,1],y=P[,2],p=y.real,T=length(y),tau=1,method="HAC",
+alternative="less")
+gw.test(x=P[,2],y=P[,1],p=y.real,T=length(y),tau=1,method="Andrews",
+alternative="greater")
 }
 \keyword{test}
-
+\keyword{forecasting}
