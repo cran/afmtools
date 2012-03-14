@@ -46,6 +46,8 @@ innovation variance; estimated by the ratio of theoretical spectrum and periodog
 }
 }
 \references{
+Whittle P (1951). \emph{Hypothesis Testing in Time Series Analysis}. Hafner, New York.
+
 Palma W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
 }
 \author{
@@ -65,3 +67,5 @@ loglik$sigma
 ####### For other examples, see 'arfima.whittle' function
 }
 \keyword{loglikelihood}
+\keyword{estimation}
+\keyword{arfima}

@@ -15,7 +15,7 @@ Width measurements Time Series Data corresponding to Campito Tree Rings.
 Available at URL \url{http://www.mat.puc.cl/~wilfredo/english/data/whitemtn.htm}. Developed by Hipel K.W. & McLeod A.I. (1994)
 }
 \references{
-Contreras J. & Palma W. (2011). Estimation, Diagnostic and Forecasting Tools for ARFIMA Models\code{:} The afmtools package. Preprint.
+Contreras-Reyes, J., Palma, W. (2011). Estimation, Diagnostic and Forecasting Tools for ARFIMA Models. Pre-print.
 
 Palma W. & Olea R. (2010). An efficient estimator for Gaussian locally stationary processes. \emph{The Annals of Statistics} 38, 2958-2997.
 }

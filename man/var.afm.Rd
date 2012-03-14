@@ -42,7 +42,7 @@ a vector with standard deviations associated to \code{d}, \code{phi_i} and \code
 }
 }
 \references{
-Contreras-Reyes J. & Palma W. (2011). Forecasting tools package for ARFIMA models. Preprint.
+Contreras-Reyes, J., Palma, W. (2011). Estimation, Diagnostic and Forecasting Tools for ARFIMA Models. Pre-print.
 
 Palma W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
 }
@@ -90,3 +90,4 @@ var.afm(phi = phi1, theta = theta1, n = n1)$G
 }
 \keyword{variance}
 \keyword{estimation}
+\keyword{arfima}

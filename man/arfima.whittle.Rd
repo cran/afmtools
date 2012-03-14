@@ -74,6 +74,8 @@ theoretical spectrum implied by the parameter estimates
 }
 }
 \references{
+Whittle P (1951). \emph{Hypothesis Testing in Time Series Analysis}. Hafner, New York.
+
 Palma W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics. New Jersey.
 }
 \author{
@@ -106,3 +108,4 @@ acf(res)
 Box.test(res, 10, type="Ljung")
 }
 \keyword{estimation}
+\keyword{arfima}

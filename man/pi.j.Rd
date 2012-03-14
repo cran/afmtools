@@ -67,5 +67,6 @@ h=1:70
 plot(h,c(psi1,rep(NA,70-24)),type="l",ylim=c(0,max(psi1)),ylab=" ")
 lines(h,c(rep(NA,24),psi2),lty=3)
 }
-\keyword{stationary}
+\keyword{asymptotic}
 \keyword{forecasting}
+\keyword{arfima}

@@ -12,7 +12,7 @@ integrated moving-average process (ARFIMA).
 \tabular{ll}{
 Package: \tab afmtools\cr
 Type: \tab Package\cr
-Version: \tab 0.1.4\cr
+Version: \tab 0.1.5\cr
 Date: \tab 2011-03-22\cr
 License: \tab GPL >= 2\cr
 LazyLoad: \tab yes\cr
@@ -23,7 +23,7 @@ The package includes several functions. The following ones are those more releva
 
 summary, plot, print, residuals and tsdiag options associated to \code{arfima} class object and residuals diagnostic. 
 \code{\link{arfima.whittle}} and \code{\link{arfima.whittle.loglik}} for Whittle estimation (produce an \code{arfima} class object) 
-and the log-likelihood function. \code{\link{gw.test}} and \code{\link{pred.arfima}} are the forecasting tools. 
+and the log-likelihood function. \code{\link{gw.test}} is the forecasting tool. 
 \code{\link{spectrum.arfima}}, \code{\link{rho.sowell}} and \code{\link{var.afm}} produce the spectrum density, autocovariance function 
 and parameter variance for ARFIMA models, respectively.
 
@@ -35,30 +35,36 @@ It is suggested that the user starts by reading the documentation of (some of) t
   Packages \code{fracdiff}, \code{polynom}, \code{longmemo}, \code{sandwich} and \code{hypergeo}.
 }
 \author{
-Javier Contreras-Reyes, Seismological Service, Department of Geophysics, Universidad de Chile. <Email:  jcontr@dgf.uchile.cl>. 
+Javier Contreras-Reyes, Seismological Service, Department of Geophysics, Universidad de Chile.
+<Email: jcontr@dgf.uchile.cl>.
 
 Georg M. Goerg, Department of Statistics, Carnegie Mellon University. <Email: gmg@stat.cmu.edu>
 
-Wilfredo Palma, Department of Statistics, Faculty of Mathematics, Pontificia Universidad Cat\'olica de Chile. <Email: wilfredo@mat.puc.cl>
+Wilfredo Palma, Departamento de Estadistica, Facultad de Matematicas, Pontificia Universidad Catolica de Chile. <Email: wilfredo@mat.puc.cl>
 
-Please send comments, error reports, etc. to the maintainer Javier Contreras-Reyes.
+Maintainer: Javier Contreras-Reyes <jcontr@dgf.uchile.cl>
 }
 
 \section{Licence}{
-This package and its documentation are usable under the terms of the "GNU General Public License", a copy of which is distributed with the
+This package and its documentation are usable under the terms of the \emph{GNU General Public License}, a copy of which is distributed with the
 package. While the software is freely usable, it would be appreciated if a reference is inserted in publications or other work which makes use of it.
 }
 
 \references{
-Bondon P. and Palma W. (2007). A class of antipersitent processes. \emph{Journal of Time Series Analysis} 28, 261-273.
-
 Brockwell, P. and Davis, R. (1991). \emph{Time Series: Theory and Methods}. Springer. New York.
 
-Contreras J. & Palma W. (2011). Estimation, Diagnostic and Forecasting Tools for ARFIMA Models\code{:} The afmtools package. Preprint.
+Contreras-Reyes, J., Idrovo, B. (2011). En busca de un modelo Benchmark Univariado para
+predecir la tasa de desempleo de Chile. \emph{Cuadernos de Economia}, 30, 55, 105-125.
+
+Contreras-Reyes, J., Palma, W. (2011). Estimation, Diagnostic and Forecasting Tools for ARFIMA Models. Pre-print.
 
 Giacomini R. and White H. (2006). Tests of Conditional Predictive Ability. \emph{Econometrica} 74, 6.
 
 Graybill D. A. (1990). Pinus longaeva tree ring data. \emph{Mammoth Creek}, Utah, National Climatic Data Center.
+
+Hassler, U., Kokoszka, P. (2010). Impulse Responses of Fractionally Integrated Processes with Long Memory. \emph{Econometric Theory}, 26, 6, 1885-1861.
+
+Karamata J. (1930). Sur un mode de croissance r\'eguliere des fonctions. Mathematica (Cluj) 4, 38-53.
 
 Kokoszka P. S. and Taqqu M. S. (1995). Fractional ARIMA with stable innovations. \emph{Stochastic Processes and Their Applications} 60, 19-47.
 
@@ -71,7 +77,8 @@ Palma W. & Olea R. (2010). An efficient estimator for Gaussian locally stationar
 Shumway, R. and Stoffer, D. (2006). \emph{Time Series Analysis and Its Applications: With R Examples}, Springer. \url{http://www.stat.pitt.edu/stoffer/tsa2/index.html}
 
 Sowell F. (1992). Maximum likelihood estimation of stationary univariate fractionally integrated time series models. \emph{Journal of Econometrics} 53, 165-188.
+
+Whittle P (1951). \emph{Hypothesis Testing in Time Series Analysis}. Hafner, New York.
 }
 \keyword{arfima}
-\keyword{longmemory}
 \keyword{package}

@@ -70,7 +70,7 @@ d=object$d, sd.innov=object$sd.innov, plot=TRUE)
 	ac=round(av/av[1],4)
 	if (plot & !is.null(object)) {
 	  plot(ac,type="h",main="Theorical ACF",ylab="ACF",ylim=c(-2/sqrt(n),1))
-        abline(h=c(0,-2/sqrt(n),2/sqrt(n)),col=c(1,2,2),lty=c(1,2,2))
+        abline(h=c(0,-2/sqrt(n),2/sqrt(n)),col=c(1,4,4),lty=c(1,2,2))
     	}
 	list(av=av, ac=ac)
 }

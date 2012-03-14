@@ -36,7 +36,7 @@ stop("multivariate time series not allowed")
 	if(tau==1){
 		re=summary(mod)
             STATISTIC = re$coefficients[1,3]
-		if (alternative == "two.sided") PVAL <- round(-abs(STATISTIC),4)
+		if (alternative == "two.sided") PVAL <- 2 * pnorm(-abs(STATISTIC))
 		else if (alternative == "less") PVAL <- round(pnorm(STATISTIC),4)
      		else if (alternative == "greater") PVAL <- round(pnorm(STATISTIC, lower.tail = FALSE),4)     
 		names(STATISTIC) <- "Normal Standad"

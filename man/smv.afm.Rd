@@ -56,3 +56,4 @@ smv.afm(object=mod,comp=TRUE)
 smv.afm(object=mod,comp=FALSE)
 }
 \keyword{variance}
+\keyword{arfima}

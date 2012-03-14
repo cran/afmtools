@@ -1,0 +1,26 @@
+#exportPattern("^[[:alpha:]]+")
+importFrom("graphics", plot)
+#importFrom("graphics", lines)
+
+export(
+	"arfima.whittle.loglik", 
+	"check.parameters.arfima", 
+	"gw.test", 
+	"ir.arfima", 
+	"per.arfima", 
+	"pi.j",
+	"plot.arfima", 
+	"print.arfima", 
+	"psi.j",
+	"residuals.arfima", 
+	"rho.arma", 
+	"rho.sowell",
+	"smv.afm", 
+	"spectrum.arfima", 
+	"spectrum.arma",
+	"summary.arfima", 
+	"tsdiag.arfima", 
+	"var.afm",
+    "arfima.whittle"
+)
+

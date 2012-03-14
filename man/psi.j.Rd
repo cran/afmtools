@@ -36,7 +36,7 @@ given by the following asymptotic relationship
 \deqn{\psi_j\sim \frac{\Theta(1)}{\Phi(1)}\frac{j^{d-1}}{\Gamma(d)}}
 }
 \value{
-a numeric value of the asymptotic MA coefficient.
+a numeric value of the asymptotic MA coefficients
 }
 \references{
 Kokoszka P. S. & Taqqu M. S. (1995). Fractional ARIMA with stable innovations. \emph{Stochastic Processes and Their Applications} 60, 19-47.
@@ -66,5 +66,6 @@ h=1:50
 plot(h,c(psi1,rep(NA,50-12)),type="l",ylab=" ")
 lines(h,c(rep(NA,12),psi2),lty=2)
 }
-\keyword{stationary}
+\keyword{asymptotic}
 \keyword{forecasting}
+\keyword{arfima}

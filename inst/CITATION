@@ -1,4 +1,4 @@
-citHeader("To cite the sn package in publications use:")
+citHeader("To cite the afmtools package in publications use:")
 
 if(!exists("meta") || is.null(meta)) meta <- packageDescription("afmtools")
 

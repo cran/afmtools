@@ -1,7 +1,7 @@
 Package: afmtools
 Type: Package
-Version: 0.1.4
-Date: 2011-04-25
+Version: 0.1.5
+Date: 2012-03-14
 Title: Estimation, Diagnostic and Forecasting Functions for ARFIMA
         models
 Author: Javier Contreras-Reyes, Georg M. Goerg, Wilfredo Palma
@@ -13,5 +13,5 @@ Description: A collection of estimation, forecasting and diagnostic
 License: GPL (>= 2)
 LazyLoad: yes
 Repository: CRAN
-Date/Publication: 2011-07-28 06:14:14
-Packaged: 2011-07-27 22:47:02 UTC; Javier
+Date/Publication: 2012-03-20 14:36:14
+Packaged: 2012-03-20 13:19:23 UTC; Javier

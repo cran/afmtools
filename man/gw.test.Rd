@@ -56,17 +56,21 @@ a character string giving the name(s) of the data
 }
 \references{
 Giacomini R. & White H. (2006). Tests of Conditional Predictive Ability. \emph{Econometrica} \bold{74}, 6.
+
+Contreras-Reyes, J., Idrovo, B. (2011). En busca de un modelo Benchmark Univariado para
+predecir la tasa de desempleo de Chile. \emph{Cuadernos de Economia}, 30, 55, 105-125.
 }
 \author{
 Javier Contreras-Reyes
 }
 \seealso{
-\code{pred.arfima}, \code{predict}
+\code{predict}
 }
 \examples{
 r = 100
 s = 30
-y = arima.sim(n = r, list(ar = c(0.8, -0.4), ma = c(-0.2, 0.3)),  sd = sqrt(0.18))
+y = arima.sim(n = r, list(ar = c(0.8, -0.4), 
+ma = c(-0.2, 0.3)),  sd = sqrt(0.18))
 y.real = y[(length(y)-s+1):length(y)]
 obs = y[1:(r-s)]
 mod.arma <- arima(obs, order = c(1,0,1))

@@ -57,4 +57,4 @@ plot(x, xlim=c(0.01, pi), ylim=c(0,1))
 plot(u, xlim=c(0.01, pi), add=TRUE, lty=2)
 }
 \keyword{spectrum}
-
+\keyword{arfima}

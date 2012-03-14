@@ -43,7 +43,7 @@ should the output be plotted
 \references{
 Palma W. (2007). \emph{Long Memory Time Series: Theory and Methods}. Wiley Series in Probability and Statistics, New Jersey.
 
-Shumway, R. & Stoffer, D. (2006). \emph{Time Series Analysis and Its Applications: With R Examples}, Springer. \url{http://www.stat.pitt.edu/stoffer/tsa2/index.html}.
+Shumway, R., Stoffer, D. (2006). \emph{Time Series Analysis and Its Applications: With R Examples}, Springer. \url{http://www.stat.pitt.edu/stoffer/tsa2/index.html}.
 }
 \author{
 Georg M. Goerg
@@ -57,7 +57,7 @@ y=MammothCreek-mean(MammothCreek)
 mod <- arfima.whittle(y,nar=1,nma=1)
 check.parameters.arfima(d=mod$d,ar=mod$ar,ma=mod$ma,plot=TRUE)
 
-###### For some particular cases ######
+###### Some particular cases ######
 # Invertible process
 check.parameters.arfima(d=0.2,ar=-0.4,ma=0.7,plot=TRUE)
 # No invertible process 
@@ -71,4 +71,5 @@ check.parameters.arfima(d=-0.7,ar=0.4,ma=0,plot=TRUE)
 # Fractional parameter outside the (-1,0.5) interval 
 check.parameters.arfima(d=0.5,ar=0.4,ma=0,plot=TRUE) 
 }
-\keyword{stationary}
+\keyword{diagnostic}
+\keyword{arfima}

@@ -76,3 +76,4 @@ rho.sowell(object=mod, lag.max=lag-1)
 acf(y,lag=lag)
 }
 \keyword{autocovariance}
+\keyword{arfima}
